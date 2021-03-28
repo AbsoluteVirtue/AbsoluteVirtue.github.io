@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 
 <head>
-    <h2>Currently available pages:</h2>
+    <style>
+        body {
+            color: rgba(255, 255, 255, 85%);
+            background-color: #0e0d0d;
+            font-family: 'Calibri';
+            font-size: 17px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .bottom-right {
+            font-size: xx-large;
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .thumbnail {
+            object-fit: cover;
+            width: 220px;
+            height: 300px;
+			border: rgb(80, 83, 86) 1px solid;
+        }
+
+        .thumbnail:hover{
+            object-fit: cover;
+            width: 230px;
+            height: 310px;
+			border: rgb(80, 83, 86) 2px solid;
+        }
+    </style>
+
+    <h2>Currently available pages</h2>
 </head>
 
 <body>
 
     <table>
         <tr>
-            <td><a href="http://www.google.com">
-                    <img src="./static/gbed.jpg" />
-                </a>
+            <td>
+                <div class="container">
+                    <a href="https://absolutevirtue.github.io/gbed/">
+                        <img class="thumbnail" src="./static/gbed.jpg"
+                            alt="True art conceals the means by which it is achieved"
+                            title="Ground Branch Editor Documentation" />
+                    </a>
+                    <div class="bottom-right">GBED</div>
+                </div>
             </td>
         </tr>
     </table>
